@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<button type="button" class="btn btn-primary" id="r">录制动作</button>
+<p id="path"></p>
+<button type="button" class="btn btn-primary" id="run">执行指定文件</button>
+<input type="text"  placeholder="路径" id="runPath"><br/>
+<button type="button" class="btn btn-primary" id="sg">自动化三公</button>
+
+</body>
+<script>
+// 重命名 Electron 提供的 require
+window.nodeRequire = require;
+delete window.require;
+delete window.exports;
+delete window.module;
+</script>
+<script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/lib/basic.js"></script>
+<script type="text/javascript" src="../scripts/operation/operation.js"></script>
+</html>

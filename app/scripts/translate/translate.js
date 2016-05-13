@@ -15,5 +15,5 @@ console.dir(service)
 function c2e(){
 	var en=$("#en").val();
 	var res=service.find(en);
-	$("#ch").val(res);
+	$("#ch").html(res);
 }
