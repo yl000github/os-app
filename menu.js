@@ -25,8 +25,47 @@ var menuContent = [
 			if (focusedWindow)
 				focusedWindow.loadURL('file://' + __dirname + '/app/views/operation.html');
 		}
-	}
-	
+	}, {
+		label : 'jsonView',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('http://www.bejson.com/jsonviewernew/');
+		}
+	}, {
+		label : 'jsonCompare',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/jsonCompare.html');
+		}
+	},
+	{
+		label : 'sqlFormat',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('http://www.bejson.com/otherformat/sql/');
+		}
+	},
+	{
+		label : 'textDiff',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('http://www.bejson.com/othertools/finddif/');
+		}
+	},
+	{
+		label : 'quickCode',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/quickCode.html');
+		}
+	},
+	{
+		label : 'browser',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/browser.html');
+		}
+	},
 	]
 },{
 	label : 'Edit',

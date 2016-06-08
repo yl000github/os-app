@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<h1>jsonCompare</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+		<h5>left</h5>
+			<textarea rows="15" cols="35" id="l-content" >["123","124"]</textarea>
+		</div>
+		<div class="col-xs-6">
+		<h5>right</h5>
+			<textarea rows="15" cols="35" id="r-content">["123","125"]</textarea>
+		</div>
+	</div>
+	<div class="row" style="margin:20px;">
+	<div class="col-xs-3">
+		<button type="button" class="btn btn-primary" id="btn-compare">比较</button>
+	</div>
+	<div class="col-xs-9">
+		<div id="result"></div>
+	</div>
+	</div>
+</div>
+
+</body>
+<script>
+// 重命名 Electron 提供的 require
+window.nodeRequire = require;
+delete window.require;
+delete window.exports;
+delete window.module;
+</script>
+<script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/jsonCompare/jsonCompare.js"></script>
+</html>
