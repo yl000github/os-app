@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="../styles/main.css">
+<link rel="stylesheet" type="text/css" href="../styles/pics-css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/pics-css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/pics-css/component.css" />
+        <link rel="stylesheet" type="text/css" href="../styles/pics-css/fxtransparent.css" />
+        <style type="text/css">
+            .pic{
+                width:100px;
+                height: 100px;
+            }
+
+        </style>
+        <script src="../scripts/pics/modernizr.custom.js"></script>
+</head>
+<body>
+    <div class="container">
+            <header class="codrops-header">
+                <nav class="codrops-demos">
+                    <a href="index.html">Small Component</a>
+                    <a href="index2.html">Full Width</a>
+                    <a class="current-demo" href="index3.html">Transparent</a>
+                </nav>
+            </header>
+            <section>
+                <div class="custom-select">
+                    <select id="fxselect" name="fxselect">
+                        <option value="-1" selected>选择一种效果...</option>
+                        <option value="fxSlideForward">Slide forward</option>
+                        <option value="fxTableDrop">Table Drop</option>
+                        <option value="fxSlideIt" selected="true">Slide it</option>
+                        <option value="fxBottleKick">Bottle kick</option>
+                        <option value="fxShelf">Off the Shelf</option>
+                    </select>
+                </div>
+                <div id="component" class="component component-transparent">
+                    <ul class="itemwrap">
+                        <li class="current"><img class="pic" src="../res/images/0.png" alt="img09"/></li>
+                        <li><img class="pic" src="../res/images/1.png" alt="0"/></li>
+                        <li><img class="pic" src="../res/images/2.png" alt="0"/></li>
+
+                    </ul>
+                    <nav>
+                        <a class="prev" href="#">Previous item</a>
+                        <a class="next" href="#">Next item</a>
+                    </nav>
+                </div>
+            </section>
+        </div><!-- /container -->
+</body>
+<script>
+// 重命名 Electron 提供的 require
+window.nodeRequire = require;
+delete window.require;
+delete window.exports;
+delete window.module;
+</script>
+<script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../scripts/pics/classie.js"></script>
+        <script src="../scripts/pics/main.js"></script>
+</html>
