@@ -77,6 +77,12 @@ var menuContent = [
 			if (focusedWindow)
 				focusedWindow.loadURL('file://' + __dirname + '/app/views/randNum.html');
 		}
+	},{
+		label : 'es6',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/es6.html');
+		}
 	},
 	]
 },{
