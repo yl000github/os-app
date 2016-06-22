@@ -29,7 +29,9 @@
 		item.addEventListener( 'click', function( ev ) { ev.preventDefault(); 
 				console.dir(this);
 				console.dir($(this));
-				alert($(this).children("img").attr("src"));
+				var filename=$(this).children("img").attr("src");
+				var num=filename.substring(filename.indexOf("images/")+7,filename.indexOf(".png"));
+				alert(num);
 			 } );
 		}
 	}

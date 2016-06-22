@@ -71,6 +71,12 @@ var menuContent = [
 			if (focusedWindow)
 				focusedWindow.loadURL('file://' + __dirname + '/app/views/pics.html');
 		}
+	},{
+		label : 'randNum',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/randNum.html');
+		}
 	},
 	]
 },{

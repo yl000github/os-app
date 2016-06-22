@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<button class="btn btn-primary" id="gen-num">产生随机数</button>
+			<div id="randNumResult" style="width:100px;height:100px"></div>
+		</div>
+		<div class="col-xs-6">
+			<button class="btn btn-primary" id="show-result">查看答案</button>
+			<img id="imgResult" style="width:200px;height:200px"/>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<button class="btn btn-primary" id="gen-longnum">产生随机长数</button>
+			<div id="longNumResult" style="width:100px;height:100px"></div>
+		</div>
+	</div>
+</div>
+
+</body>
+<script>
+// 重命名 Electron 提供的 require
+window.nodeRequire = require;
+delete window.require;
+delete window.exports;
+delete window.module;
+</script>
+<script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/randNum/randNum.js"></script>
+</html>
