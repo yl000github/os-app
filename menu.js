@@ -83,6 +83,12 @@ var menuContent = [
 			if (focusedWindow)
 				focusedWindow.loadURL('file://' + __dirname + '/app/views/es6.html');
 		}
+	},{
+		label : 'svn',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/svn.html');
+		}
 	},
 	]
 },{
