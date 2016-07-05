@@ -42,6 +42,9 @@ function process(){
 	//删除
 	arr=arr.each(function(element,index){
 		if(element.trim()=="") return null;
+		var l=element.length;
+		var last5=element.substring(l-5,l);
+		if(last5.indexOf(".")==-1) return null;
 		var del=element.substring(element.indexOf("svn"),element.lastIndexOf("server")+7);
 		element=element.replace(del,"");
 //		console.log(element);
@@ -55,7 +58,9 @@ function process(){
 //		console.log(JSON.stringify(obB))
 //		console.log(obA.path>obB.path)
 		if(obA.path==obB.path) return 0;
-		if(obA.path>obB.path){
+		var pA=obA.path.toLocaleLowerCase();
+		var pB=obB.path.toLocaleLowerCase();
+		if(pA>pB){
 			return 1;
 		}else{
 			return -1;
