@@ -89,6 +89,18 @@ var menuContent = [
 			if (focusedWindow)
 				focusedWindow.loadURL('file://' + __dirname + '/app/views/svn.html');
 		}
+	},{
+		label : 'sql',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/sql-helper.html');
+		}
+	},{
+		label : 'localfile',
+		click : function(item, focusedWindow) {
+			if (focusedWindow)
+				focusedWindow.loadURL('file://' + __dirname + '/app/views/localfile.html');
+		}
 	},
 	]
 },{
