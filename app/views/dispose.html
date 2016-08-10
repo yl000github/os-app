@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+一键部署本地服务
+<div class="container">
+	<div class="row">
+		<div class="col-xs-9">
+		app子系统部署
+<!-- 		<input type="text" id="app-dir"> -->
+		<button type="button" class="btn btn-primary" id="app-process">处理</button>
+		</div>
+		<div class="col-xs-3">
+		<div id="app-result">
+		</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:20px;">
+		<div class="col-xs-9">
+		omp部署 
+<!-- 		<input type="text" id="omp-dir"> -->
+		<button type="button" class="btn btn-primary" id="omp-process">处理</button>
+		</div>
+		<div class="col-xs-3">
+		<div id="omp-result">
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+// 重命名 Electron 提供的 require
+window.nodeRequire = require;
+delete window.require;
+delete window.exports;
+delete window.module;
+</script>
+<script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="../scripts/lib/function.js"></script>
+<script type="text/javascript" src="../scripts/lib/file.js"></script>
+<script type="text/javascript" src="../scripts/dispose/conf.js"></script>
+<script type="text/javascript" src="../scripts/dispose/dispose.js"></script>
+</html>

@@ -1,0 +1,99 @@
+[
+	{
+		jobName:'eBill4WxAppPay',
+		jobFile:'/payControlEngineJob/eBill4WxAppPay.js',
+		jobTrigger:'0 0 10 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'eBill4AliAppPay',
+		jobFile:'/payControlEngineJob/eBill4AliAppPay.js',
+		jobTrigger:'0 0 8 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'daliyCountJob',
+		jobFile:'/job/dailycount.js',
+		jobTrigger:'0 0 1 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'changeCouponState',
+		jobFile:'/job/changeCouponState.js',
+		jobTrigger:'0 5 0 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'resetCustomerNumber',
+		jobFile:'/job/resetCustomerNumber.js',
+		jobTrigger:'0 59 23 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'clearNoPayOrderJob',
+		jobFile:'/job/clearNoPayOrder.js',
+		jobTrigger:'0 0/1 * * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'automaticDeductionFirst',
+		jobFile:'/job/automaticDeductionFirst.js',
+		jobTrigger:'0 0 17 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'automaticDeductionLast',
+		jobFile:'/job/automaticDeductionLast.js',
+		jobTrigger:'0 30 17 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'automaticDeductionFirst_am09',
+		jobFile:'/job/automaticDeductionFirst_am09.js',
+		jobTrigger:'0 0 9 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'automaticDeductionLast_am09',
+		jobFile:'/job/automaticDeductionLast_am09.js',
+		jobTrigger:'0 30 9 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},{
+		jobName:'clearDeductionFirst',
+		jobFile:'/job/clearDeductionFirst.js',
+		jobTrigger:'0 0/20 8,9 * * ?',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'clearDeductionLast',
+		jobFile:'/job/clearDeductionLast.js',
+		jobTrigger:'0 0/20 9,10 * * ?',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'repaymentNotify',
+		jobFile:'/job/repaymentNotify.js',
+		jobTrigger:'0 0 15 * * ? *',
+		startNow:false,
+		allowConcurrentExe:false
+	},
+	{
+		jobName:'clearDisabledQuotation',
+		jobFile:'/job/clearDisabledQuotation.js',
+		jobTrigger:'0 0/20 0,1 * * ?',
+		startNow:false,
+		allowConcurrentExe:false
+	}
+]

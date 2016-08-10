@@ -19,7 +19,7 @@ function refresh(){
 //模拟队列
 var Queue=function(){
 	var data=new Array();
-	var len=10;
+	var len=5;
 	this.enqueue=function(a){
 		data.push(a);
 		if(data.length>len){

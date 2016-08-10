@@ -113,6 +113,14 @@ var menuContent = [
 						}
 					},
 					{
+						label : 'dispose',
+						click : function(item, focusedWindow) {
+							if (focusedWindow)
+								focusedWindow.loadURL('file://' + __dirname
+										+ '/app/views/dispose.html');
+						}
+					},
+					{
 						label : 'localfile',
 						click : function(item, focusedWindow) {
 							if (focusedWindow)
