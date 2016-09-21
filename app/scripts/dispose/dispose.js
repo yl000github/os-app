@@ -16,10 +16,10 @@ $(function(){
 	
 })
 function taskList(type,dir){
-//	changeWebXml(type,dir);
-//	ignore(type,dir);
-//	jsProject(type,dir);
-//	rename(type,dir);
+	changeWebXml(type,dir);
+	ignore(type,dir);
+	jsProject(type,dir);
+	rename(type,dir);
 	copyWinder(type,dir);
 	return "done";
 }
@@ -55,10 +55,12 @@ function copyWinder(type,dir){
 	//TODO  
 	if(type==0){
 		copyFolder(conf.appSrc_winder,conf.appProjectPos+"/winder");
+		var f=new File(conf.appSrc_pos+"/lib/userAuth.js");f.copy(conf.appProjectPos+"/lib/userAuth.js");
 	}else{
 		copyFolder(conf.ompSrc_winder,conf.ompServerPos+"/winder");
+		copyFolder(conf.ompSrc_pos+"/lib",conf.ompServerPos+"/lib");
 	}
-	copyFolder("d:/pic111","d:/pic111copy");
+//	copyFolder("d:/pic111","d:/pic111copy");
 }
 function rename(type,dir){
 	if(type==0){
