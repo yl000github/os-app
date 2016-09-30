@@ -132,7 +132,14 @@ var menuContent = [
 		{
 			label : "Game",
 			submenu : [
-
+				{
+					label : '3dView',
+					click : function(item, focusedWindow) {
+						if (focusedWindow)
+							focusedWindow.loadURL('file://' + __dirname
+									+ '/app/views/3d.html');
+					}
+				}    	
 			]
 		},
 		{

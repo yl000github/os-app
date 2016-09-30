@@ -1,0 +1,20 @@
+<html>
+<head>
+<link rel="stylesheet" href="../../node_modules/vis/dist/vis.min.css">
+</head>
+<body>
+<div id="visualization"></div>
+</body>
+<script type="text/javascript">
+//重命名 Electron 提供的 require
+window.nodeRequire = require;
+delete window.require;
+delete window.exports;
+delete window.module;
+</script>
+<script type="text/javascript" src="../../node_modules/vis/dist/vis.min.js"></script>
+<script type="text/javascript" src="../scripts/lib/function.js"></script>
+<script type="text/javascript" src="../scripts/lib/file.js"></script>
+<script type="text/javascript" src="../scripts/3d/3d.js"></script>
+
+</html>

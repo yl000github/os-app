@@ -23,6 +23,17 @@ Array.prototype.each = function(fn){
      }
      return a;
 };
+Array.prototype.find=function(ob){
+	for(var i=0;i<this.length;i++){
+//		log(this[i],ob);
+		if(this[i]==ob){
+//			log("array",this);
+//			log("ob",ob);
+			return i;
+		}
+	}
+	return -1;
+}
 /**
  * 去重
  */
@@ -74,7 +85,7 @@ function log(flag,obj){
 	} catch (e) {
 		str=obj;
 	}
-	logger.debug(flag+str);
+	console.log(flag+str);
 }
 
 
