@@ -22,8 +22,8 @@ function draw3d(data1){
 
     // specify options
     var options = {
-        width:  '500px',
-        height: '552px',
+        width:  '20000px',
+        height: '5052px',
         style: 'surface',
         showPerspective: true,
         showGrid: true,
@@ -47,8 +47,8 @@ function draw3d(data1){
  * 
  */
 var R={
-//	path:"d:/genotype.dat",
-	path:"app/res/asf.txt",
+	path:"d:/genotype.dat",
+//	path:"app/res/asf.txt",
 	wds:[],
 	genes:[],
 	lines:null,
@@ -114,7 +114,7 @@ var R={
 		draw3d(this.vData);
 	}
 }
-R.process();
+//R.process();
 
 
 
